@@ -29,10 +29,9 @@ Os pré-requisitos para a aplicação:
 -	Documentação sucinta e explicativa de como rodar seu código e levantar os ambientes (vídeo explicativo em um link acessível é aceito desde que o áudio e o vídeo estejam em boa qualidade).
 
 ## Avaliação 
-Para nos enviar seu código, você poderá escolher **uma das três** opções abaixo:
+Para nos enviar seu código, você poderá escolher **uma das duas** opções abaixo:
 -	Fazer um fork deste repositório e nos mandar uma pull-request;
 -	Dar acesso ao seu repositório no Github para FeegowWelcomeTech;
--	Enviar um git bundle do seu repositório para o e-mail welcome.tech@feegow.com.br
 > Caso opte por fazer um pull-request, deixe ele explicativo **apontando tudo que precisa ser feito para rodar a sua aplicação**.
 
 ## Será indispensável para apresentação deste case:
