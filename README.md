@@ -24,7 +24,7 @@
 5. Executar o docker-compose e aguardar a instalação das dependências
     * ``./vendor/bin/sail up -d``
 6. Execute as migrations do banco de dados
-    * ``./vendor/bin/sail artisan migrate``
+    * ``./vendor/bin/sail artisan migrate --seed``
 7. Instalar as dependências do Node
     * ``npm install``
 8. Inicie o frontend Vite
