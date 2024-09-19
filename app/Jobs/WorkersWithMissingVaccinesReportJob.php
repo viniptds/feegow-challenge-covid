@@ -46,7 +46,7 @@ class WorkersWithMissingVaccinesReportJob implements ShouldQueue
 
         fputcsv($file, $header, ';');
 
-        $workers = Worker::select(['id', 'fullname', 'cpf'])->withCount('vaccines')->with('vaccines')->having('vaccines_count', '<', Vaccine::MAX_DOSE_COUNT)->get();
+        $workers = Worker::select(['id', 'fullname', 'cpf'])->withCount('vaccines')->with('vaccines')->orderBy('fullname')->having('vaccines_count', '<', Vaccine::MAX_DOSE_COUNT)->get();
 
         foreach ($workers as $worker) {
             $row = [

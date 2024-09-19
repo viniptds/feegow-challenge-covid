@@ -9,7 +9,6 @@
         <table class="mt-4 w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
             <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
 
-                <th class="px-6 py-4">ID</th>
                 <th class="px-6 py-4">Nome</th>
                 <th class="px-6 py-4">Lote</th>
                 <th class="px-6 py-4">Data de Validade</th>
@@ -24,7 +23,6 @@
                     @foreach ($vaccines as $vaccine)
                         <tr id="vaccine_{{ $vaccine->id }}"
                             class="p-4 bg-white border-b dark:bg-gray-800 dark:border-gray-700 h-50">
-                            <td class="px-6 py-4">{{ $vaccine->id }}</td>
                             <td class="px-6 py-4">{{ $vaccine->name }}</td>
                             <td class="px-6 py-4">{{ $vaccine->batch }}</td>
                             <td class="px-6 py-4">{{ $vaccine->due_date }}</td>

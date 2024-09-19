@@ -13,7 +13,7 @@ class VaccineController extends Controller
      */
     public function index()
     {
-        $vaccines = Vaccine::all();
+        $vaccines = Vaccine::select()->orderBy('name')->orderBy('batch')->get();
         return view('vaccines.index', ['vaccines' => $vaccines]);
     }
 
@@ -46,21 +46,6 @@ class VaccineController extends Controller
         return view('vaccines.show', ['vaccine' => $vaccine]);
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     */
-    public function edit(Vaccine $vaccine)
-    {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
-     */
-    public function update(UpdateVaccineRequest $request, Vaccine $vaccine)
-    {
-        //
-    }
 
     /**
      * Remove the specified resource from storage.

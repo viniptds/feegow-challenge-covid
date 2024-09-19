@@ -13,7 +13,7 @@ class WorkerController extends Controller
      */
     public function index()
     {
-        $workers = Worker::select()->with('vaccines')->get();
+        $workers = Worker::select()->with('vaccines')->orderBy('fullname')->get();
         return view('workers.index')->with('workers', $workers);
     }
 
